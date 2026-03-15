@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจองและจัดการห้องปฏิบัติการคอมพิวเตอร์</title>
+    <link rel="stylesheet" href="computer-room.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-desktop"></i>
+                <span>ComRoom Booking</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">หน้าแรก</a></li>
+                <li><a href="#rules">ระเบียบการใช้งาน</a></li>
+                <li><a href="#rooms">ข้อมูลห้อง</a></li>
+                <li><a href="#booking" class="btn-book">จองห้อง</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>ยินดีต้อนรับสู่ระบบจัดการห้องคอมพิวเตอร์</h1>
+            <p>เพื่อการเรียนรู้และค้นคว้าที่ไร้ขีดจำกัด พร้อมเครื่องสเปคสูง และอินเทอร์เน็ตความเร็วสูง</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn primary"><i class="fa-regular fa-calendar-check"></i> จองเวลาเข้าใช้งาน</a>
+                <a href="#rooms" class="btn secondary"><i class="fa-solid fa-info-circle"></i> ดูสถานะห้อง</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="glass-card info-card">
+                <div class="stat">
+                    <span class="number">4</span>
+                    <span class="label">ห้องปฏิบัติการ</span>
+                </div>
+                <div class="stat">
+                    <span class="number">160</span>
+                    <span class="label">เครื่องคอมพิวเตอร์</span>
+                </div>
+                <div class="stat">
+                    <span class="number">1G</span>
+                    <span class="label">อินเทอร์เน็ตความเร็วสูง</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Rules Section -->
+    <section id="rules" class="rules-section">
+        <div class="section-header">
+            <h2><i class="fa-solid fa-clipboard-list"></i> ระเบียบการใช้งานห้องคอมพิวเตอร์</h2>
+            <p>กรุณาปฏิบัติตามกฎอย่างเคร่งครัด เพื่อส่วนรวม</p>
+        </div>
+        
+        <div class="rules-grid">
+            <div class="rule-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-id-card"></i></div>
+                <h3>แสดงบัตรก่อนใช้งาน</h3>
+                <p>นักเรียน/นักศึกษา ต้องแสดงบัตรประจำตัวทุกครั้งก่อนเข้าใช้บริการ</p>
+            </div>
+            <div class="rule-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-ban"></i></div>
+                <h3>ห้ามนำอาหารและเครื่องดื่มเข้า</h3>
+                <p>ไม่อนุญาตให้นำอาหาร เครื่องดื่ม หรือขนมขบเคี้ยวทุกชนิดเข้ามาในห้อง</p>
+            </div>
+            <div class="rule-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-volume-xmark"></i></div>
+                <h3>งดส่งเสียงดัง</h3>
+                <p>โปรดรักษาความสงบ ไม่ส่งเสียงดังรบกวนผู้อื่นที่กำลังเรียนหรือทำงาน</p>
+            </div>
+            <div class="rule-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-gamepad"></i></div>
+                <h3>ห้ามเล่นเกม</h3>
+                <p>ให้บริการเฉพาะการเรียน การสอน และการค้นคว้าข้อมูลเท่านั้น</p>
+            </div>
+            <div class="rule-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-virus-slash"></i></div>
+                <h3>ระวังไวรัส</h3>
+                <p>สแกนไวรัส Flash Drive ทุกครั้งก่อนนำมาเสียบใช้งานกับเครื่องคอมพิวเตอร์</p>
+            </div>
+            <div class="rule-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-power-off"></i></div>
+                <h3>ปิดเครื่องเมื่อเลิกใช้งาน</h3>
+                <p>Shutdown เครื่องคอมพิวเตอร์ เก็บเก้าอี้ และนำขยะไปทิ้งทุกครั้งหลังใช้งานเสร็จ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Status -->
+    <section id="rooms" class="rooms-section">
+        <div class="section-header white">
+            <h2><i class="fa-solid fa-door-open"></i> สถานะห้องปฏิบัติการปัจจุบัน</h2>
+            <p>ตรวจสอบสถานะห้องก่อนทำการจอง</p>
+        </div>
+
+        <div class="rooms-container">
+            <!-- Room 1 (Available) -->
+            <div class="room-card available">
+                <div class="room-header">
+                    <h3>ห้อง 601</h3>
+                    <span class="status-badge">ว่าง</span>
+                </div>
+                <div class="room-body">
+                    <p class="specs"><i class="fa-solid fa-microchip"></i> Intel Core i5 / RAM 16GB / M.2 512GB</p>
+                    <div class="capacity">
+                        <span><i class="fa-solid fa-users"></i> ความจุ:</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 20%;"></div>
+                        </div>
+                        <span>8 / 40 เครื่อง</span>
+                    </div>
+                    <p class="software"><i class="fa-solid fa-layer-group"></i> Adobe CC, MS Office, VS Code</p>
+                </div>
+                <div class="room-footer">
+                    <button class="btn-small primary">จองห้องนี้</button>
+                </div>
+            </div>
+
+            <!-- Room 2 (Full) -->
+            <div class="room-card full">
+                <div class="room-header">
+                    <h3>ห้อง 602</h3>
+                    <span class="status-badge">เต็ม / มีสอน</span>
+                </div>
+                <div class="room-body">
+                    <p class="specs"><i class="fa-solid fa-microchip"></i> Intel Core i7 / RAM 32GB / M.2 1TB</p>
+                    <div class="capacity">
+                        <span><i class="fa-solid fa-users"></i> ความจุ:</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%;"></div>
+                        </div>
+                        <span>40 / 40 เครื่อง</span>
+                    </div>
+                    <p class="instructor"><i class="fa-solid fa-chalkboard-user"></i> อ.สมชาย (วิชาเขียนโปรแกรม 1)</p>
+                    <p class="time-until"><i class="fa-regular fa-clock"></i> ว่างเวลา 12:00 น.</p>
+                </div>
+                <div class="room-footer">
+                    <button class="btn-small disabled" disabled>ไม่สามารถจองได้</button>
+                </div>
+            </div>
+
+            <!-- Room 3 (Available) -->
+            <div class="room-card available">
+                <div class="room-header">
+                    <h3>ห้อง 603</h3>
+                    <span class="status-badge">ว่าง</span>
+                </div>
+                <div class="room-body">
+                    <p class="specs"><i class="fa-solid fa-microchip"></i> Apple M2 / RAM 16GB / SSD 512GB</p>
+                    <div class="capacity">
+                        <span><i class="fa-solid fa-users"></i> ความจุ:</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%;"></div>
+                        </div>
+                        <span>18 / 40 เครื่อง</span>
+                    </div>
+                    <p class="software"><i class="fa-solid fa-layer-group"></i> Final Cut Pro, Logic Pro, Adobe CC</p>
+                </div>
+                <div class="room-footer">
+                    <button class="btn-small primary">จองห้องนี้</button>
+                </div>
+            </div>
+            
+            <!-- Room 4 (Maintenance) -->
+            <div class="room-card maintenance">
+                <div class="room-header">
+                    <h3>ห้อง 604</h3>
+                    <span class="status-badge">ปิดปรับปรุง</span>
+                </div>
+                <div class="room-body">
+                    <div class="maintenance-alert">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p>กำลังดำเนินการอัปเกรดระบบเครือข่าย<br><small>คาดว่าจะเสร็จสิ้น: 20 มี.ค.</small></p>
+                    </div>
+                </div>
+                <div class="room-footer">
+                    <button class="btn-small disabled" disabled>ปิดให้บริการ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fa-solid fa-desktop"></i>
+                <span>ComRoom Booking</span>
+            </div>
+            <p>ศูนย์คอมพิวเตอร์และเทคโนโลยีสารสนเทศ</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 ระบบจองห้องปฏิบัติการคอมพิวเตอร์. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple sticky navbar effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
